@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سنتر سجدة للزي الشرعي</title>
+  <meta name="description" content="سنتر سجدة للزي الشرعي - جملة وقطاعي">
+  <meta name="theme-color" content="#54275f">
+  <meta property="og:title" content="سنتر سجدة للزي الشرعي">
+  <meta property="og:description" content="موديلات الزي الشرعي بالجملة والقطاعي من سنتر سجدة.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <img src="assets/logo.png" alt="سنتر سجدة" class="logo">
+    <div><strong>سنتر سجدة</strong><small>للزي الشرعي</small></div>
+  </div>
+  <nav class="actions">
+    <button id="themeBtn">🌙 الوضع</button>
+    <button id="cartBtn">🛒 السلة <span id="cartCount">0</span></button>
+    <button id="adminBtn">⚙️ الإدارة</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <img id="heroImage" src="assets/logo.png" alt="سنتر سجدة">
+  <div class="heroOverlay">
+    <h1>سنتر سجدة للزي الشرعي</h1>
+    <p>جملة وقطاعي • موديلات متنوعة • عروض متجددة</p>
+    <a class="primary" href="#products">تصفح الموديلات</a>
+  </div>
+</section>
+
+<section class="categories" id="categories"></section>
+
+<main>
+  <div class="sectionHead">
+    <div>
+      <h2>الموديلات</h2>
+      <p>اختاري القسم ثم اضغطي على الموديل لمشاهدة التفاصيل.</p>
+    </div>
+    <input id="search" placeholder="🔎 ابحثي عن موديل...">
+  </div>
+  <section id="products" class="grid"></section>
+
+  <section class="reviews">
+    <h2>⭐ تقييمات العميلات</h2>
+    <div id="reviewsList"></div>
+    <form id="reviewForm" class="card">
+      <input id="reviewName" required placeholder="اسمك">
+      <select id="reviewStars" required>
+        <option value="5">★★★★★</option><option value="4">★★★★</option>
+        <option value="3">★★★</option><option value="2">★★</option><option value="1">★</option>
+      </select>
+      <textarea id="reviewText" required placeholder="اكتبي تقييمك"></textarea>
+      <button class="primary">إرسال التقييم</button>
+    </form>
+  </section>
+
+  <section class="customer-service">
+    <h2>خدمة العملاء</h2>
+    <p>للتواصل واتساب فقط: <a class="whatsappLink" href="https://wa.me/201200696273" target="_blank" rel="noopener">01200696273</a></p>
+    <p>الإسكندرية - الزوايدة - شارع السوق - سنتر سجدة للزي الإسلامي - بجوار عطارة السرجاني - أمام عصير نور الصباح</p>
+  </section>
+</main>
+
+<footer>
+  <div class="footerLinks">
+    <a href="https://www.facebook.com/share/18LEJD76DC/" target="_blank">Facebook</a>
+    <a href="https://vm.tiktok.com/ZS9SyJ7rR826e-Izsx6/" target="_blank">TikTok</a>
+    <button id="wheelBtn">🎡 عجلة الحظ</button>
+    <button id="forumBtn">💬 المنتدى</button>
+    <button id="invoiceBtn">🧾 الفواتير</button>
+  </div>
+  <p>© <span id="year"></span> سنتر سجدة للزي الشرعي</p>
+</footer>
+
+<button class="floating right" id="chatBtn">💬</button>
+<button class="floating left" id="botBtn">🤖</button>
+
+<div id="modal" class="modal"><div class="modalBox"><button class="close">×</button><div id="modalContent"></div></div></div>
+
+<script src="script.js?v=3"></script>
+</body>
+</html>
